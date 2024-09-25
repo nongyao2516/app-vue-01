@@ -1,11 +1,37 @@
 <template>
+  <!--  
   <nav>
     <router-link to="/">Home</router-link> |
+    <router-link to="/product">Product</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/Login">Login</router-link>
   </nav>
+-->
+  <div id="app">
+  <Menu />
+ 
+
   <router-view/>
+</div>
 </template>
+
+<script>
+import Menu from './components/Menu.vue';
+
+export default {
+  components: {
+    Menu
+  }
+
+};
+</script>
+
+
+
+
+
+
+
 
 <style>
 #app {
